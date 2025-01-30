@@ -1,0 +1,8 @@
+CREATE TABLE Usuarios (
+    usuario_id INT IDENTITY PRIMARY KEY,
+    nombre NVARCHAR(100) NOT NULL,
+    correo NVARCHAR(255) UNIQUE NOT NULL,
+    contrasena NVARCHAR(255) NOT NULL
+);
+
+

@@ -1,0 +1,33 @@
+.titulo h6 {
+    text-align: center; 
+    font-size: 24px; 
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold; 
+    color: #333; 
+}
+
+.subtitulo h6{
+    text-align: center;
+    font-size:15px;
+    font-family: 'Arial', sans-serif;
+    color: #333; 
+}
+
+.input-texto {
+    text-align: center;
+}
+
+.boton {
+    text-align: center;
+}
+
+.contenedor-principal {
+    display: flex; /* Activa Flexbox */
+    flex-direction: column;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alinea verticalmente al centro */
+    gap: 20px; /* Espaciado entre los elementos */
+    padding: 20px; /* Espaciado interno del contenedor */
+    background-color: #f0f0f0; /* Fondo del contenedor */
+    border: 1px solid #ccc; /* Borde del contenedor */
+}
