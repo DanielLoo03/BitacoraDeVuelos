@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\danie\\repos\\BitacoraDeVuelos\\APIBitacoraDeVuelos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C4740B85-FBEA-4058-871D-9C4FD9EA1531}|APIBitacoraDeVuelos.csproj|c:\\users\\danie\\repos\\bitacoradevuelos\\apibitacoradevuelos\\modelos\\vuelos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4740B85-FBEA-4058-871D-9C4FD9EA1531}|APIBitacoraDeVuelos.csproj|solutionrelative:modelos\\vuelos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4740B85-FBEA-4058-871D-9C4FD9EA1531}|APIBitacoraDeVuelos.csproj|c:\\users\\danie\\repos\\bitacoradevuelos\\apibitacoradevuelos\\modelos\\contextovuelos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4740B85-FBEA-4058-871D-9C4FD9EA1531}|APIBitacoraDeVuelos.csproj|solutionrelative:modelos\\contextovuelos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4740B85-FBEA-4058-871D-9C4FD9EA1531}|APIBitacoraDeVuelos.csproj|c:\\users\\danie\\repos\\bitacoradevuelos\\apibitacoradevuelos\\controllers\\controladorvuelos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4740B85-FBEA-4058-871D-9C4FD9EA1531}|APIBitacoraDeVuelos.csproj|solutionrelative:controllers\\controladorvuelos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4740B85-FBEA-4058-871D-9C4FD9EA1531}|APIBitacoraDeVuelos.csproj|c:\\users\\danie\\repos\\bitacoradevuelos\\apibitacoradevuelos\\controllers\\vueloscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4740B85-FBEA-4058-871D-9C4FD9EA1531}|APIBitacoraDeVuelos.csproj|solutionrelative:controllers\\vueloscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ContextoVuelos.cs",
-              "DocumentMoniker": "C:\\Users\\danie\\repos\\BitacoraDeVuelos\\APIBitacoraDeVuelos\\Modelos\\ContextoVuelos.cs",
-              "RelativeDocumentMoniker": "Modelos\\ContextoVuelos.cs",
-              "ToolTip": "C:\\Users\\danie\\repos\\BitacoraDeVuelos\\APIBitacoraDeVuelos\\Modelos\\ContextoVuelos.cs",
-              "RelativeToolTip": "Modelos\\ContextoVuelos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T20:36:19.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Vuelos.cs",
-              "DocumentMoniker": "C:\\Users\\danie\\repos\\BitacoraDeVuelos\\APIBitacoraDeVuelos\\Modelos\\Vuelos.cs",
-              "RelativeDocumentMoniker": "Modelos\\Vuelos.cs",
-              "ToolTip": "C:\\Users\\danie\\repos\\BitacoraDeVuelos\\APIBitacoraDeVuelos\\Modelos\\Vuelos.cs",
-              "RelativeToolTip": "Modelos\\Vuelos.cs",
+              "Title": "VuelosController.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\repos\\BitacoraDeVuelos\\APIBitacoraDeVuelos\\Controllers\\VuelosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VuelosController.cs",
+              "ToolTip": "C:\\Users\\danie\\repos\\BitacoraDeVuelos\\APIBitacoraDeVuelos\\Controllers\\VuelosController.cs",
+              "RelativeToolTip": "Controllers\\VuelosController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T20:38:07.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ControladorVuelos.cs",
-              "DocumentMoniker": "C:\\Users\\danie\\repos\\BitacoraDeVuelos\\APIBitacoraDeVuelos\\Controllers\\ControladorVuelos.cs",
-              "RelativeDocumentMoniker": "Controllers\\ControladorVuelos.cs",
-              "ToolTip": "C:\\Users\\danie\\repos\\BitacoraDeVuelos\\APIBitacoraDeVuelos\\Controllers\\ControladorVuelos.cs",
-              "RelativeToolTip": "Controllers\\ControladorVuelos.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAIAywBoAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T20:29:40.04Z",
+              "WhenOpened": "2025-02-01T21:34:15.025Z",
               "EditorCaption": ""
             }
           ]

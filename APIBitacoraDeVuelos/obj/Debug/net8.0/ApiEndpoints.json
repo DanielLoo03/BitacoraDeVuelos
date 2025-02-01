@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "APIBitacoraDeVuelos.Controllers.ControladorVuelos",
+    "Method": "Login",
+    "RelativePath": "api/ControladorVuelos/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "APIBitacoraDeVuelos.Modelos.Usuarios",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "APIBitacoraDeVuelos.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

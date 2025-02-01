@@ -3,6 +3,7 @@ using APIBitacoraDeVuelos.Modelos;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace APIBitacoraDeVuelos.Migrations
 {
     [DbContext(typeof(ContextoVuelos))]
-    partial class ContextoVuelosModelSnapshot : ModelSnapshot
+    [Migration("20250130214829_RenombrarVuelosAUsuarios")]
+    partial class RenombrarVuelosAUsuarios
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -34,10 +37,6 @@ namespace APIBitacoraDeVuelos.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Correo")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("HashContrasena")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

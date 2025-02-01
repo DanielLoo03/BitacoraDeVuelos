@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Inicio de sesión</title>
+    <script src="Login.js" defer></script>
 </head>
 <body>
+    <!--Contenedores -->
     <div class="titulo">
         <h6>Inicio de sesión</h6>
     </div>
     <div class="contenedor-principal">
         <div class="input-texto">
-            <input type="text" placeholder="Escribe tu correo">
+            <input id="correo" type="text" placeholder="Escribe tu correo">
         </div>
         <div class="input-texto">
-            <input type="text" placeholder="Escribe tu contraseña">
+            <input id="contrasena" type="text" placeholder="Escribe tu contraseña">
         </div>
         <div class="boton">
-            <button type="submit" formmethod="POST">Aceptar</button>
+            <button id="botonLogin">Aceptar</button>
         </div>
     </div>
 </body>

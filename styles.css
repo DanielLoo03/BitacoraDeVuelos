@@ -9,8 +9,10 @@
 .subtitulo h6{
     text-align: center;
     font-size:15px;
+    font-weight:normal;
     font-family: 'Arial', sans-serif;
     color: #333; 
+    margin-bottom: 15px;
 }
 
 .input-texto {
@@ -22,12 +24,26 @@
 }
 
 .contenedor-principal {
-    display: flex; /* Activa Flexbox */
+    display: flex; 
     flex-direction: column;
-    justify-content: space-between; /* Espacio entre los elementos */
-    align-items: center; /* Alinea verticalmente al centro */
-    gap: 20px; /* Espaciado entre los elementos */
-    padding: 20px; /* Espaciado interno del contenedor */
-    background-color: #f0f0f0; /* Fondo del contenedor */
-    border: 1px solid #ccc; /* Borde del contenedor */
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+}
+
+.contenedor-registro-vuelos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contenedor-registro-vuelos input, .contenedor-registro-vuelos h6 {
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    margin: 10px;
 }

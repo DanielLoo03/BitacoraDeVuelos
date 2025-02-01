@@ -10,7 +10,7 @@ namespace APIBitacoraDeVuelos.Modelos
             
         }
 
-        public DbSet<Vuelos> Vuelos { get; set; } = null!;
+        public DbSet<Usuarios> Usuarios { get; set; } = null!;
 
     }
 }
