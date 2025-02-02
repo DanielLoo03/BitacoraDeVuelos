@@ -11,6 +11,7 @@ namespace APIBitacoraDeVuelos.Modelos
         }
 
         public DbSet<Usuarios> Usuarios { get; set; } = null!;
+        public DbSet<Vuelos> Vuelos { get; set; } = null!;
 
     }
 }

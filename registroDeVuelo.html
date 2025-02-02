@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="RegistroDeVuelos.js" defer></script>
     <title>Registro de vuelos</title>
 </head>
 <body>
@@ -14,19 +15,24 @@
         <div class="subtitulo">
             <h6>Salida</h6>
             <input type="datetime-local" id="fecha-hora-salida" name="fecha-hora-salida">
-            <input type="text" id="ciudad" name="ciudad" placeholder="Ingrese nombre de ciudad">
+            <input type="text" id="ciudadSalida" name="ciudad" placeholder="Ingrese nombre de ciudad">
+
             <h6>Llegada</h6>
             <input type="datetime-local" id="fecha-hora-llegada" name="fecha-hora-llegada">
-            <input type="text" id="ciudad" name="ciudad" placeholder="Ingrese nombre de ciudad">
+            <input type="text" id="ciudadLlegada" name="ciudad" placeholder="Ingrese nombre de ciudad">
+
             <h6>PNR</h6>
             <input type="text" id="PNR" name="PNR" placeholder="Ingrese PNR">
+
             <h6>Fecha de abordaje</h6>
             <input type="date" id="fecha-abordaje" name="fecha-abordaje">
+
             <h6>Hora de abordaje</h6>
             <input type="time" id="hora-abordaje" name="hora-abordaje">
+
             <h6>Fecha de registro</h6>
             <input type="date" id="fecha-registro" name="fecha-registro">
-            <button class="boton">Registrar vuelo</button>
+            <button class="boton" id="botonRegistro">Registrar vuelo</button>
         </div>
     </div>
 </body>

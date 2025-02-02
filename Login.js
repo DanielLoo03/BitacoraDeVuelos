@@ -18,7 +18,6 @@ document.getElementById('botonLogin').addEventListener('click', async function()
 
         if (response.ok) {
             const data = await response.json();
-            // Aquí puedes manejar la respuesta, por ejemplo, redirigir al usuario
             if (data.success) {
                 window.location.href = "C:/Users/danie/repos/BitacoraDeVuelos/registroDeVuelo.html";
             } else {
