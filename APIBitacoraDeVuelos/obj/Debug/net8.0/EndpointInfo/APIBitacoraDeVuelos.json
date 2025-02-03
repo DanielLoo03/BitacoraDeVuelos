@@ -5,26 +5,103 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/ControladorVuelos/login": {
+    "/api/Vuelos": {
+      "get": {
+        "tags": [
+          "Vuelos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Vuelos"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Vuelos"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Vuelos"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Vuelos/{PNR}": {
+      "get": {
+        "tags": [
+          "Vuelos"
+        ],
+        "parameters": [
+          {
+            "name": "PNR",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Vuelos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Vuelos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Vuelos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Vuelos/login": {
       "post": {
         "tags": [
-          "ControladorVuelos"
+          "Vuelos"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Usuarios"
+                "$ref": "#/components/schemas/UsuariosLogin"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Usuarios"
+                "$ref": "#/components/schemas/UsuariosLogin"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Usuarios"
+                "$ref": "#/components/schemas/UsuariosLogin"
               }
             }
           }
@@ -32,6 +109,54 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Vuelos/registrarVuelo": {
+      "post": {
+        "tags": [
+          "Vuelos"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Vuelos"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Vuelos"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Vuelos"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Vuelos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Vuelos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Vuelos"
+                }
+              }
+            }
           }
         }
       }
@@ -78,17 +203,9 @@
   },
   "components": {
     "schemas": {
-      "Usuarios": {
+      "UsuariosLogin": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "nombre": {
-            "type": "string",
-            "nullable": true
-          },
           "correo": {
             "type": "string",
             "nullable": true
@@ -96,10 +213,52 @@
           "contrasena": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Vuelos": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
           },
-          "hashContrasena": {
+          "datetimeSalida": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ciudadSalida": {
             "type": "string",
             "nullable": true
+          },
+          "datetimeLlegada": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ciudadLlegada": {
+            "type": "string",
+            "nullable": true
+          },
+          "pnr": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaAbordaje": {
+            "type": "string",
+            "format": "date"
+          },
+          "horaAbordaje": {
+            "type": "string",
+            "format": "time"
+          },
+          "fechaRegistro": {
+            "type": "string",
+            "format": "date"
+          },
+          "registradoPor": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

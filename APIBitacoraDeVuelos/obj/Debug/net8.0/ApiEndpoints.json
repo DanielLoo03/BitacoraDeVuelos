@@ -1,19 +1,91 @@
 [
   {
-    "ContainingType": "APIBitacoraDeVuelos.Controllers.ControladorVuelos",
+    "ContainingType": "APIBitacoraDeVuelos.Controllers.VuelosController",
+    "Method": "obtenerVuelos",
+    "RelativePath": "api/Vuelos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[APIBitacoraDeVuelos.Modelos.Vuelos, APIBitacoraDeVuelos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIBitacoraDeVuelos.Controllers.VuelosController",
+    "Method": "obtenerVuelo",
+    "RelativePath": "api/Vuelos/{PNR}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PNR",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "APIBitacoraDeVuelos.Modelos.Vuelos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIBitacoraDeVuelos.Controllers.VuelosController",
     "Method": "Login",
-    "RelativePath": "api/ControladorVuelos/login",
+    "RelativePath": "api/Vuelos/login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "request",
-        "Type": "APIBitacoraDeVuelos.Modelos.Usuarios",
+        "Type": "APIBitacoraDeVuelos.Modelos.UsuariosLogin",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "APIBitacoraDeVuelos.Controllers.VuelosController",
+    "Method": "registrarVuelo",
+    "RelativePath": "api/Vuelos/registrarVuelo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vuelo",
+        "Type": "APIBitacoraDeVuelos.Modelos.Vuelos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "APIBitacoraDeVuelos.Modelos.Vuelos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "APIBitacoraDeVuelos.Controllers.WeatherForecastController",

@@ -24,12 +24,12 @@ namespace APIBitacoraDeVuelos.Controllers
             return await _contextoVuelos.Vuelos.ToListAsync();
         }
 
-        [HttpGet("{Id}")]
-        public async Task<ActionResult<Vuelos>> obtenerVuelo(int id) {
+        [HttpGet("{PNR}")]
+        public async Task<ActionResult<Vuelos>> obtenerVuelo(string PNR) {
             if (_contextoVuelos.Vuelos is null) {
                 return NotFound();
             }
-            var vuelo = await _contextoVuelos.Vuelos.FindAsync(id);
+            var vuelo = await _contextoVuelos.Vuelos.FirstOrDefaultAsync(v => v.PNR == PNR);
             if (vuelo is null) {
                 return NotFound();
             }
@@ -51,7 +51,9 @@ namespace APIBitacoraDeVuelos.Controllers
         }
 
         [HttpPost("registrarVuelo")]
-        public async Task<ActionResult<Vuelos>> registrarVuelo(Vuelos vuelo) {
+        public async Task<ActionResult<Vuelos>> registrarVuelo([FromBody] Vuelos vuelo) {
+            Console.WriteLine($"DatetimeSalida recibida: {vuelo.DatetimeSalida}");
+            Console.WriteLine($"DatetimeLlegada recibida: {vuelo.DatetimeLlegada}");
             _contextoVuelos.Vuelos.Add(vuelo);
             await _contextoVuelos.SaveChangesAsync();
             return CreatedAtAction(nameof(obtenerVuelo), new { id = vuelo.Id }, vuelo);
