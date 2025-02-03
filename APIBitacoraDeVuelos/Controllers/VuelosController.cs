@@ -52,11 +52,9 @@ namespace APIBitacoraDeVuelos.Controllers
 
         [HttpPost("registrarVuelo")]
         public async Task<ActionResult<Vuelos>> registrarVuelo([FromBody] Vuelos vuelo) {
-            Console.WriteLine($"DatetimeSalida recibida: {vuelo.DatetimeSalida}");
-            Console.WriteLine($"DatetimeLlegada recibida: {vuelo.DatetimeLlegada}");
             _contextoVuelos.Vuelos.Add(vuelo);
             await _contextoVuelos.SaveChangesAsync();
-            return CreatedAtAction(nameof(obtenerVuelo), new { id = vuelo.Id }, vuelo);
+            return CreatedAtAction(nameof(obtenerVuelo), new { PNR = vuelo.PNR }, vuelo);
         }
     }
 }
