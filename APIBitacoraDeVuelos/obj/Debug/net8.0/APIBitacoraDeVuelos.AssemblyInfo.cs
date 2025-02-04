@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("APIBitacoraDeVuelos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+082b88172dacddc8b631d116cdc00f7fd63e3bf9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75e8b47a67f5444797a43495ec932499bc976aab")]
 [assembly: System.Reflection.AssemblyProductAttribute("APIBitacoraDeVuelos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("APIBitacoraDeVuelos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
