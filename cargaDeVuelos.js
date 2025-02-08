@@ -12,12 +12,12 @@ async function cargaDeVuelos() {
             vueloDiv.classList.add("vuelo");
 
             vueloDiv.innerHTML = `
-                <div>Salida ${vuelo.datetimeSalida}   ${vuelo.ciudadSalida}</div>
-                <div>Llegada ${vuelo.datetimeLlegada} ${vuelo.ciudadLlegada}</div>
-                <div>Fecha de abordaje ${vuelo.fechaAbordaje}</div>
-                <div>Hora de abordaje ${vuelo.horaAbordaje}</div>
-                <div>Fecha de registro ${vuelo.fechaRegistro}</div>
-                <div>PNR ${vuelo.pnr}</div>
+                <div>${vuelo.datetimeSalida} ${vuelo.ciudadSalida}</div>
+                <div>${vuelo.datetimeLlegada} ${vuelo.ciudadLlegada}</div>
+                <div>${vuelo.fechaAbordaje}</div>
+                <div>${vuelo.horaAbordaje}</div>
+                <div>${vuelo.fechaRegistro}</div>
+                <div>${vuelo.pnr}</div>
             `;
             contenedor.appendChild(vueloDiv);
         });
@@ -62,12 +62,12 @@ document.getElementById('botonBusquedaPorPNR').addEventListener('click', async f
         const vueloDiv = document.createElement("div");
         vueloDiv.classList.add("response");
         vueloDiv.innerHTML = `
-            <div>Salida ${vuelo.datetimeSalida}   ${vuelo.ciudadSalida}</div>
-            <div>Llegada ${vuelo.datetimeLlegada} ${vuelo.ciudadLlegada}</div>
-            <div>Fecha de abordaje ${vuelo.fechaAbordaje}</div>
-            <div>Hora de abordaje ${vuelo.horaAbordaje}</div>
-            <div>Fecha de registro ${vuelo.fechaRegistro}</div>
-            <div>PNR ${vuelo.pnr}</div>
+            <div>${vuelo.datetimeSalida}   ${vuelo.ciudadSalida}</div>
+            <div>${vuelo.datetimeLlegada} ${vuelo.ciudadLlegada}</div>
+            <div>${vuelo.fechaAbordaje}</div>
+            <div>${vuelo.horaAbordaje}</div>
+            <div>${vuelo.fechaRegistro}</div>
+            <div>${vuelo.pnr}</div>
         `;
 
         contenedor.appendChild(vueloDiv);
